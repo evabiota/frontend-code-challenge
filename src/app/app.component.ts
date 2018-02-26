@@ -12,7 +12,6 @@ import 'rxjs/add/operator/toPromise';
 })
 
 export class AppComponent implements OnInit{
-
   advertisement: Advertisement[] = [];
 
   ngOnInit() {
@@ -25,8 +24,6 @@ export class AppComponent implements OnInit{
     this.restHouseService.getHouseInfo()
       .subscribe(res => {
       this.advertisement = res;
-
-      console.log('estoy aqui', res);
   });
   }
 }

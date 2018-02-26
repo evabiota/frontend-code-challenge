@@ -1,5 +1,7 @@
 import{Injectable} from'@angular/core';
+// Importa objets from http library
 import {Headers, Http, HttpModule, RequestOptions, Response} from '@angular/http';
+// Import Observable class from rxjs library
 import 'rxjs/add/operator/toPromise';
 import { AdvertisementAsset } from '../model/advertisement.asset';
 import { Advertisement } from '../model/advertisement';
@@ -25,8 +27,9 @@ export class RestHouseService {
     Object.keys(data).forEach(function (key){
         if(key === 'data'){
            console.log(data[key]);
-           // aqui hacemos un for para solo obtener los 10 primeros
-           // debemos conseguir algo como esto data[key][0]...data[key][9]
+           //here we do a for to obtain only the first 10
+           //we have to get something like [key][0]...data[key][9]
+
             let i=0;
             while (i < 10){
               result.push(data[key][i]);
