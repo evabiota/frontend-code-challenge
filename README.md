@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-# MyApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
 
 ## Consuming a REST API with Angular Http-Service in Typescript####
 
@@ -59,54 +29,5 @@ I imported bootstrat 4 to app.component.html
 For this app is the faster because bootstrap has a component 'card' with classes ready made for that. Was a question of time and comfortability.
 I choosed import via cdn because give less probems and was more than enough for this case.
 I choosed working with style.css and not sass because there was very less additional styles to use.
-=======
-# Front-End Interview Test
 
-This is a simple front-end code challenge created to serve two purposes:
-
-1. Show off your skills,
-1. Give us a better understanding of your skills.
-
-## The Task
-
-The programming challenge exists in 2 parts:
-* Part A: HTML + CSS
-* Part B: Javascript
-
-### PART A: HTML + CSS
-
-![Screen](https://raw.githubusercontent.com/mcmakler/frontend-code-challenge/master/assets/fe_test_example_screen.png)
-
-* Create a layout based on the given screen (fe_test_example_screen.png).
-* Style the layout consistently and beautifully, adhering as closely to the design as possible.
-* **NOTE:** You are free to use any preprocessor you wish, or write raw CSS. *Bonus points for an explanation of your choice.*
-
-### PART B: Javascript
-
-* Consume our public API @ https://api.mcmakler.de/v1/advertisements to retrieve a list of advertisements of vacant apartments.
-* Display the first 10 advertisements in the HTML + CSS layout created in step A, sticking to the layout, placing data where it fits.
-* **NOTE:** You are free to use any framework you wish, or do it VanillaJS style. *Brief explanation of your choice.*
-
-## Additional Instructions
-
-* Fork this repository
-* After you're done, provide us the link to your repository.
-* Leave comments where you were not sure how to properly proceed.
-* Implementations without a README will be automatically rejected.
-* No pull requests
-* ES6 and above
-
-## Bonus Points
-
-* Tests
-* Clean code!
-* Knowledge of application flow.
-* Knowledge of modern best practices/coding patterns.
-* Demonstration of good state management.
-* Usage of frameworks/supersets.
-* Pixel perfection.
-* Componential thinking.
-* Usage of linters.
-* Git hooks.
-* Usage of Material Design concepts
 >>>>>>> c65d57ee028ce9c6415bbb8501fa596595063ba1
