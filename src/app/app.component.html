@@ -1,0 +1,40 @@
+
+<div class="container">
+    <div class="row">
+      <!--Grid-->
+        <div class="col-xs-18 col-sm-6 col-md-4" *ngFor="let adv of advertisement; let myIndex = index">
+            <!--Card-->
+            <div class="card card-cascade">
+                <!--Card image-->
+                  <div class="view overlay">
+                    <div class="overlay-button">
+                      <div *ngIf="adv.purpose;then stmnt2t else  mieten "></div>
+                        <ng-template #mieten>Mieten</ng-template>
+                        <ng-template #stmnt2t>stmnt2</ng-template>
+                      </div>
+                      <img src={{adv.advertisementAssets[0].advertisementThumbnails.inventory_m.url}} class="img-fluid" alt="">
+                      <a>
+                          <div class="mask"></div>
+                      </a>
+                  </div>
+                <!--/.Card image-->
+                <!--Card content-->
+                  <div class="card-body text-center">
+                      <div class="center-info">
+                          <p class="card-text">{{adv.title}}</p>
+                          <p class="card-subtitle mb-2 text-muted">Lorem ipsum dolor
+                          </p>
+                      </div>
+                      <div class="bottom-info">
+                          <span><strong>{{adv.advertisementPrice.baseRent}} €</strong></span>
+                          <span>{{adv.realestateSummary.numberOfRooms}} Zimmer</span>
+                          <span>ab {{adv.realestateSummary.space | number : '1.2-2' | noComma}} m2</span>
+                      </div>
+                  </div>
+                </div>
+                <!--/.Card content-->
+            </div>
+              <!--/.Card-->
+        </div>
+        <!--Grid-->
+    </div>

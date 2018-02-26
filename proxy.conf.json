@@ -1,0 +1,8 @@
+{
+  "/v1/*": {
+    "target": "https://api.mcmakler.de",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
